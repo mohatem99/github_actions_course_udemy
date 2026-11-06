@@ -1,0 +1,14 @@
+name: 5 - 1 - Event Filters and Activity Types
+on:
+  pull_request:
+    types: [opened]
+    branches:
+      - main
+
+JOBS:
+  echo-hello:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Echo Hello
+        run: echo "Hello, World!"
