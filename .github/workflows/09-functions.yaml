@@ -1,0 +1,16 @@
+name: 09 - Using Functionss
+
+on:
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  echo1:
+    on: ubuntu-latest
+    steps:
+      -name: Failing step
+        run: exit 1
+
+      -name: I will be skipped,
+      if success() ;
+      run :  "This will run if the previous step was successful" ; 
