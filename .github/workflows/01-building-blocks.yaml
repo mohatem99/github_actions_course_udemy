@@ -5,14 +5,12 @@ on: workflow_dispatch
 jobs:
   echo-hello:
     runs-on: ubuntu-latest
-
     steps:
       - name: Echo Hello
         run: echo "Hello, World!"
 
   echo-goodbye:
     runs-on: ubuntu-latest
-
     steps:
       - name: Successful step
         run: |
